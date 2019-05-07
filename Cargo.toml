@@ -1,0 +1,18 @@
+[package]
+name = "mysql_enum"
+version = "0.1.0"
+authors = ["Artos <roy.ganz@glanis.biz>"]
+edition = "2018"
+
+[workspace]
+members =  [
+    "derive"
+]
+
+[dependencies]
+mysql = "^15"
+mysql_enum_derive = { path = "derive", version = "0.1.0" }
+
+[dev-dependencies]
+strum = "0.14"
+strum_macros = "0.14"
