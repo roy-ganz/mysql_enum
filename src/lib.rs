@@ -1,6 +1,8 @@
 
 use mysql::Value;
 
+pub use mysql; // Reexport for derive produced code
+
 #[derive(Debug)]
 pub struct EnumIr<T> {
 	pub string: String,
