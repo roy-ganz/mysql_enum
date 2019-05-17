@@ -15,7 +15,7 @@ members =  [
 ]
 
 [dependencies]
-mysql = "^15"
+mysql = "^14"
 mysql_enum_derive = { path = "derive", version = "0.1.0" }
 
 [dev-dependencies]
