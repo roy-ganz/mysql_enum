@@ -21,6 +21,9 @@ strum_macros = "0.14"
 Now annotate your enum.
 
 ```rust
+use mysql_enum::MysqlEnum;
+use strum_macros::{Display, EnumString};
+
 #[derive(PartialEq, EnumString, Display, MysqlEnum)]
 pub enum UserRole {
     Admin,
